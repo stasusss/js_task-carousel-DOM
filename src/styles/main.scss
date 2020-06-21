@@ -7,3 +7,56 @@
 body {
   font-family: Lato, sans-serif;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider {
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+
+  display: flex;
+
+  transition: transform 250ms ease-in-out;
+
+  &-wrap {
+    width: 310px;
+    margin: 0 20px;
+    overflow: hidden;
+  }
+
+  &__dots-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__dot {
+    border: 0;
+    border-radius: 50%;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: grey;
+    margin: 10px;
+
+    cursor: pointer;
+
+    &_active {
+      background-color: black;
+    }
+  }
+}
